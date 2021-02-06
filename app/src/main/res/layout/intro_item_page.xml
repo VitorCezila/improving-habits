@@ -14,7 +14,7 @@
             android:id="@+id/iv_image_intro"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:src="@drawable/ic_sport" />
+            android:src="@drawable/ic_sports" />
 
         <TextView
             android:id="@+id/tv_description_intro"

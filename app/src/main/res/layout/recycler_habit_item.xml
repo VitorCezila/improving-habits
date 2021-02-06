@@ -23,7 +23,7 @@
             android:layout_height="140dp"
             android:layout_margin="10dp"
             android:alpha=".1"
-            android:src="@drawable/ic_sport" />
+            android:src="@drawable/ic_sports" />
 
 
         <LinearLayout

@@ -82,37 +82,99 @@
                 android:text="Time: (not selected)"
                 android:textSize="20sp" />
 
-            <LinearLayout
-                android:id="@+id/layout_sleep_sport_study"
+            <HorizontalScrollView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content">
 
-                <ImageView
-                    android:id="@+id/iv_teaSelected"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/sleep_selected" />
+                <LinearLayout
+                    android:id="@+id/layout_sleep_sport_study"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/iv_fastFoodSelected"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/sport_selected" />
+                    <ImageView
+                        android:id="@+id/iv_schoolSelected"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/school_selected" />
 
-                <ImageView
-                    android:id="@+id/iv_smokingSelected"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/school_selected" />
+                    <ImageView
+                        android:id="@+id/iv_sleepSelected"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/sleep_selected" />
 
-            </LinearLayout>
+                    <ImageView
+                        android:id="@+id/iv_dietSelected"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/diet_selected" />
+
+                    <ImageView
+                        android:id="@+id/iv_sportSelected"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/sport_selected" />
+
+                    <ImageView
+                        android:id="@+id/iv_smokeSelected"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/smoke_selected" />
+
+                    <ImageView
+                        android:id="@+id/iv_artSelected"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/art_selected" />
+
+                    <ImageView
+                        android:id="@+id/iv_travelSelected"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_outline_travel" />
+
+                    <ImageView
+                        android:id="@+id/iv_dogSelected"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/dog_selected" />
+
+                    <ImageView
+                        android:id="@+id/iv_messageSelected"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/message_selected" />
+
+                    <ImageView
+                        android:id="@+id/iv_stopSelected"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/stop_selected" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
 
             <Button
                 android:id="@+id/btn_confirm"
@@ -130,6 +192,5 @@
         </LinearLayout>
 
     </ScrollView>
-
 
 </RelativeLayout>

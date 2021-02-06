@@ -32,7 +32,8 @@
         android:layout_margin="24dp"
         android:clickable="true"
         android:focusable="true"
-        android:src="@drawable/ic_add" />
+        android:src="@drawable/ic_add"
+        android:backgroundTint="@color/purple_200"/>
 
     <!-- when the list is empty -->
     <TextView
@@ -45,6 +46,5 @@
         android:textSize="20sp"
         android:textStyle="italic"
         android:visibility="gone" />
-
 
 </RelativeLayout>
