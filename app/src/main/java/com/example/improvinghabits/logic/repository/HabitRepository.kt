@@ -5,7 +5,7 @@ import com.example.improvinghabits.data.models.Habit
 import com.example.improvinghabits.logic.dao.HabitDao
 
 class HabitRepository (private val habitDao: HabitDao) {
-    val getAlllHabits: LiveData<List<Habit>> = habitDao.getAllHabits()
+    val getAllHabits: LiveData<List<Habit>> = habitDao.getAllHabits()
 
     suspend fun addHabit(habit: Habit) {
         habitDao.addHabit(habit)
