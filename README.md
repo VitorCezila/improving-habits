@@ -1,8 +1,8 @@
 # improving-habits
 
 Having a routine can greatly improve your health.
-Your daily routine influences your quality of rest. 
 
+Your daily routine influences your quality of rest. 
 Your sleep schedule and bedtime habits affect your mental sharpness, performance, emotional well-being and energy 
 level.
 
