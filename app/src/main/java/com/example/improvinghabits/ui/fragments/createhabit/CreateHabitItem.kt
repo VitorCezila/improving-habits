@@ -6,9 +6,12 @@ import android.os.Bundle
 import android.view.View
 import android.widget.DatePicker
 import android.widget.TimePicker
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.example.improvinghabits.R
+import com.example.improvinghabits.data.models.Habit
 import com.example.improvinghabits.ui.viewmodels.HabitViewModel
 import com.example.improvinghabits.utils.Calculations
 import kotlinx.android.synthetic.main.fragment_create_habit_item.*
@@ -40,12 +43,31 @@ TimePickerDialog.OnTimeSetListener, DatePickerDialog.OnDateSetListener{
 
         //inside here will add a function that will update the database with the current information selected from create habit screen
         btn_confirm.setOnClickListener {
-            //addHabitToDB()
+            addHabitToDB()
         }
 
         pickDateAndTime()
 
         drawableSelected()
+    }
+
+    private fun addHabitToDB() {
+        title = et_habitTitle.text.toString()
+        description = et_habitDescription.text.toString()
+
+        timeStamp = "$cleanDate $cleanTime"
+
+        if(!(title.isEmpty() || description.isEmpty() || timeStamp.isEmpty() || drawableSelected == 0)){
+            val habit = Habit(0, title, description, timeStamp, drawableSelected)
+
+            habitViewModel.addHabit(habit)
+            Toast.makeText(context, "Habit created successfully!", Toast.LENGTH_LONG).show()
+
+            findNavController().navigate(R.id.action_createHabitItem_to_habitList)
+        } else {
+            Toast.makeText(context, "Please fill all the fields", Toast.LENGTH_LONG).show()
+        }
+
     }
 
     //Which category the user selected for the habit
@@ -251,6 +273,5 @@ TimePickerDialog.OnTimeSetListener, DatePickerDialog.OnDateSetListener{
         month = cal.get(Calendar.MONTH)
         year = cal.get(Calendar.YEAR)
     }
-
 
 }
