@@ -1,4 +1,4 @@
-# improving-habits
+# improving-habits-MVVM
 
 Having a routine can greatly improve your health.
 
