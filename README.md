@@ -8,6 +8,8 @@ level.
 
 So thinking about it, we created this app so you can organize your day and improve your quality of life :notebook_with_decorative_cover::rainbow:.
 
+The application was made using the MVVM structural design pattern, using good programming practices.
+
 # Screenshots
 
 ### Intro Screen
